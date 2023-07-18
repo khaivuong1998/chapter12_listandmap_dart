@@ -13,11 +13,12 @@ void main() {
     list2[i] = colors2[i];
   }
   print(list2);
-  for (int i = 0; i < list2.length; i++) {
-    list.add(list2[i]);
-  }
+  // for (int i = 0; i < list2.length; i++) {
+  //   list.add(list2[i]);
+  // }
+  list.addAll(list2);
   list2.clear();
-  // list.addAll(list2);
+
   print(list2);
   print(list);
   list.removeRange(4, 7);
